@@ -25,7 +25,7 @@ $ python python_interface/example.py
 
 ##### Circuit diagram:
 
-![Electric]()
+![Electric](./python_interface/Doc/Img/Diagram.jpg)
 
 ##### Device pictures:
 
