@@ -1,6 +1,6 @@
 *** Settings ***
 
-Library    stm32l476x_UART    port=COM3    baudrate=115200    WITH NAME    stm  # Assuming you save your class in stm32l476x.py
+Library    stm32l476x_UART    port=COM3    baudrate=115200    WITH NAME    stm
 
 *** Test Cases ***
 Test GetProcessData
@@ -11,3 +11,27 @@ Test GetProcessData
 Test ChangeDisplay
     [Documentation]    Test the ChangeDisplay method
     stm.ChangeDisplay   temp
+
+Test ChangeDisplay
+    [Documentation]    Test the ChangeDisplay method
+    stm.ChangeDisplay   pressure
+
+Test ChangeDisplay
+    [Documentation]    Test the ChangeDisplay method
+    stm.ChangeDisplay   logo
+
+Test ChangeDisplay
+    [Documentation]    Test the ChangeDisplay method
+    stm.ChangeDisplay   height
+
+Test ChangeDisplay
+    [Documentation]    Test the ChangeDisplay method
+    stm.ChangeDisplay   adc
+
+Test ChangeProcessUnits
+    [Documentation]    Test the ChangeProcessUnit method
+    stm.ChangeProcessUnits SetTempC
+
+Test ChangeProcessUnits
+    [Documentation]    Test the ChangeProcessUnit method
+    stm.ChangeProcessUnits SetTempF
