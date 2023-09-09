@@ -80,20 +80,3 @@ class stm32l476x_UART(UartCOM, iUart):
         This function writes data on eeprom
         ''' 
         self._objUART.send('WriteToEeprom')
-
-# controller = stm32l476x('COM3', 115200)
-
-# stm32l476x.ChangeDisplay(controller, 'logo')
-# stm32l476x.GetProcessData(controller)
-# stm32l476x.ChangeProcessUnits(controller, 'SetTempF')
-
-# --------------- TODO ---------------
-'''
-ChangeProcessUnits When params are set i
-After long press on not programmed function display is flashing ()
-Code optimalization on cotroller side (Done)
-Make flag inside main loop (DONE) - solved issue now there is no hanging or reset required after changing units
-DOCSTRINGS (Done)
-EXMAPLE 
-README.MD ()
-'''
